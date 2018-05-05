@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+    <style>
+        
+        #filme1 img#cover{
+            float: left;
+            position: absolute;
+            padding-left: 5%;
+            padding-top: 7%;
+        }
+        #filme1 img#banner {
+            padding-right: 10%;
+            padding-left: 4%;
+
+            
+        }
+        #filme1 h1{
+            padding-left: 62%;
+            font-size: 300%;
+        }
+        
+        #filme1 p{
+            text-align: justify;
+            width: 90%;
+            height: 50%;
+            padding-left: 40%;
+            padding-top: 1px;
+        }
+        	
+		table { 
+            text-align: center;
+			width:700px;
+			margin:15% auto;
+			border-spacing:0;
+			border-right:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+		}
+		
+		caption {
+			font-size:130%;
+			font-weight:bold;
+			padding:5px 30%;
+			background-color:#ECECEC;
+			border:1px solid #ccc;
+			border-bottom:none;
+		}
+		
+		tr, td, th {
+			border:thin solid #ccc;
+			border-bottom:none;
+			border-right:none;
+			padding:5px;
+		}
+		
+		td { 
+			text-align:center;
+		}
+		
+		th {
+			text-align:left;
+		}
+		
+		thead th {
+			text-align:center;
+			background-color:#E0E0E0;
+		}
+
+		thead tr th:first-child {
+			text-align:left;
+		}
+    </style>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Em Cartaz</title>
+    <link rel="stylesheet" type="text/css" href="_css/principal.css"/>
+    <link rel="stylesheet" href="_css/pagHome.css">
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>check = 2;</script><!--atribui um valor como id da pagina-->
+    <script language="JavaScript" src="_javascript/funcoes.js"></script>
+    <!--Jquery-->
+    <script src="_javascript/jquery.js"></script>
+    
+    <style>
+        
+        #filme1 img#cover{
+            float: left;
+            position: absolute;
+            padding-left: 5%;
+            padding-top: 3%;
+            width: 220px;
+            height: 348px;
+        }
+        #filme1 img#banner {
+            padding-right: 10%;
+            padding-left: 4%;
+            width: 750px; 
+            height: 380px;
+
+            
+        }
+        #filme1 h1{
+            padding-left: 62%;
+            font-size: 130%;
+            margin-bottom: 4%;
+        }
+        
+        #filme1 p{
+            text-align: justify;
+            width: 50%;
+            height: 40%;
+            padding-left: 40%;
+        }
+        	
+		table { 
+            text-align: center;
+			width:700px;
+			margin:15% auto;
+			border-spacing:0;
+			border-right:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+		}
+		
+		caption {
+			font-size:130%;
+			font-weight:bold;
+			padding:5px 30%;
+			background-color:#ECECEC;
+			border:1px solid #ccc;
+			border-bottom:none;
+		}
+		
+		tr, td, th {
+			border:thin solid #ccc;
+			border-bottom:none;
+			border-right:none;
+			padding:5px;
+		}
+		
+		td { 
+			text-align:center;
+		}
+		
+		th {
+			text-align:left;
+		}
+		
+		thead th {
+			text-align:center;
+			background-color:#E0E0E0;
+		}
+
+		thead tr th:first-child {
+			text-align:left;
+		}
+    </style>
+
+
+</head>
+<body>
+<header id="inicial">
+
+    <a href="homePage.html"> <img id="logoEmCartaz" src="_imagens/logoEmCartaz.png" width="440px" height="auto"/></a>
+
+</header>
+<div id="interface" >
+    <!--Aqui entra uma imagem-->
+    <article id="filme1">
+    <h1><br><br>Filmes em Cartaz</h1>
+    <img id="cover" src="_imagens/jurassic_world2Cover.png" alt="Capa Jurrasic World 2" title="Jurassic World 2">
+    <p>Com todas as maravilhosas aventuras e emoções de uma das franquias mais populares e bem sucedidas da história do cinema, esse novo evento cinematográfico mostra o retorno dos personagens e dinossauros favoritos do público – além de novas espécias, mais espetaculares e aterrorizante do que nunca.</p>
+    
+    <table>
+        <caption>Jurassic World: Fallen Kingdom</caption>
+                <thead>
+                <tr>
+                    <td>Gênero</td>
+                    <td>Duração</td>
+                    <td>Nota</td>
+                </tr>
+                    
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ação/ Ficção Científica</td>
+                    <td>115min</td>
+                    <td>4.5</td>
+                </tr>
+        </tbody>
+    </table>
+    <hr>
+    <img id="banner" src="_imagens/jurassic_world2Title.jpg" alt="Jurassic World 2">
+    
+        <small>Adicionar Trailer</small>
+    
+    <hr>
+    </article>
+    <article id="filme1">
+    <img id="cover" src="_imagens/incriveis2Cover.jpg" alt="Os Incríveis 2" title="Os Incríveis 2">
+    <p>Quando Helena Pêra é chamada para voltar a lutar contra o crime como a super-heroína Mulher-Elástica, cabe ao seu marido, Roberto, a tarefa de cuidar das crianças, especialmente o bebê Zezé. O que ele não esperava era que o caçula da família também tivesse superpoderes, que surgem sem qualquer controle</p>
+    
+    <table>
+        <caption>Os Incríveis 2</caption>
+                <thead>
+                <tr>
+                    <td>Gênero</td>
+                    <td>Duração</td>
+                    <td>Nota</td>
+                </tr>
+                    
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Animação</td>
+                    <td>85min</td>
+                    <td>4.8</td>
+                </tr>
+        </tbody>
+    </table>
+    <hr>
+    <img id="banner" src="_imagens/The-Incredibles-2.jpg" alt="Os incríveis 2">
+    
+        <small>Adicionar Trailer</small>
+    
+
+    </article>
+    
+
+</div>
+<nav id="menu">
+    <h1>Menu Principal</h1>
+    <ul>
+        <li><a href="homePage.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoEmCartaz')"/>Home</li>
+        <li><a href="series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logoEmCartaz')"/>Séries</li>
+        <li><a href="emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logoEmCartaz')"/>Em breve</li>
+        <li><a href="recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logoEmCartaz')"/>Recomendados</li>
+        <li><a href="noticias.html" onmousemove="mudaMenu('logoNews')" onmouseout="mudaMenu('logoEmCartaz')"/>Notícias</li>
+    </ul>
+</nav>
+
+
+
+<footer id="rodape">
+    <nav>
+
+        <ul>
+            <li><a href="https://facebook.com"/>&copy;CineNews</li>
+            <li><a href="https://facebook.com"/>Facebook</li>
+            <li><a href="https://facebook.com"/>Fale Conosco</li>
+            <li><a href="https://facebook.com"/>Twitter</li>
+        </ul>
+    </nav>
+
+</footer>
+<script src="_javascript/jquery.js"></script>
+<script src="_javascript/bootstrap.min.js"></script>
+
+</body>
+</html>
