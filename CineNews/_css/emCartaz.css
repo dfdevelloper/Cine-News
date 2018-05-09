@@ -1,30 +1,43 @@
 @charset "UTF-8";
 
-    <style>
-        
-        #filme1 img#cover{
+       .filme1 img.cover{
             float: left;
             position: absolute;
             padding-left: 5%;
-            padding-top: 7%;
+            padding-top: 3%;
+            width: 220px;
+            height: 348px;
         }
-        #filme1 img#banner {
+        .filme1 img.banner {
             padding-right: 10%;
             padding-left: 4%;
+            width: 750px; 
+            height: 380px;
 
             
         }
-        #filme1 h1{
-            padding-left: 62%;
-            font-size: 300%;
+        .filme1 h1{
+            padding-left: 50%;
+            font-size: 200%;
+            margin-bottom: 4%;
+            
         }
         
-        #filme1 p{
-            text-align: justify;
-            width: 90%;
-            height: 50%;
+        .filme1 h2{ 
+            font-size: 150%;
             padding-left: 40%;
-            padding-top: 1px;
+        }
+        
+        .filme1 h3{
+            font-size: 100%;
+            padding-left: 40%;
+        }
+        
+        .filme1 p{
+            text-align: justify;
+            width: 50%;
+            height: 40%;
+            padding-left: 40%;
         }
         	
 		table { 
@@ -68,4 +81,25 @@
 		thead tr th:first-child {
 			text-align:left;
 		}
-    </style>
+        
+        article {
+            padding-bottom: 20px;
+            margin-bottom: 20%;
+        }
+        
+        iframe{
+            padding-top: 3%;
+            padding-right: 10%;
+            padding-left: 4%;
+            width: 750px; 
+            height: 380px;
+        }
+        
+        video{
+            padding-top: 3%;
+            padding-right: 10%;
+            padding-left: 4%;
+            width: 750px; 
+            height: 480px;
+            
+        }
