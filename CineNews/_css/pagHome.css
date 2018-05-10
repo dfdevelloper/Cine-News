@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+h2{
+    font-size: 120%;
+    padding-left: 10%;
+}
+
 div#interface section#noticia3d h1 {
 
-    padding-left: 6%;
+    padding-left: 10%;
     margin-top: 10%;
     color: black;
     margin-left: 200px;
@@ -24,6 +29,10 @@ div#interface  p{
 div#interface p:first-letter{
     color: black;
     font-size: 40px;
+}
+
+section#noticia3d{
+    padding-top: 1px;
 }
 
 section#NoticiaLocadora h1 {

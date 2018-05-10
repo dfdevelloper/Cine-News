@@ -12,6 +12,9 @@
     src: url('https://fonts.googleapis.com/css?family=Sriracha');
     font-family: Luckiest Guy;
     src: url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+    font-family: got;
+    src: url("../_fonts/got.ttf");
+    
 
 }
 
@@ -84,6 +87,7 @@ nav#menu li{
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
+    box-shadow: 10px 10px 5px #999
 }
 
 nav#menu li:hover {
@@ -126,6 +130,7 @@ footer#rodape li{
     font-family: Ceviche One, cursive;
     padding: 10px;
     margin: 2px;
+    box-shadow: 10px 10px 5px #999;
 
 }
 

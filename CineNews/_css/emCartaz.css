@@ -24,14 +24,13 @@
         }
         
         .filme1 h2{ 
-            font-size: 150%;
-            padding-left: 40%;
+            font-size: 180%;
+            padding-left: 23%;
+            padding-right: 15%;
+            text-align: center;
         }
         
-        .filme1 h3{
-            font-size: 100%;
-            padding-left: 40%;
-        }
+
         
         .filme1 p{
             text-align: justify;
@@ -102,4 +101,10 @@
             width: 750px; 
             height: 480px;
             
+        }
+
+        sub{
+            font-size: 65%;
+    
+    
         }
