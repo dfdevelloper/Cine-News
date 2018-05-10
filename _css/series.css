@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+h1{
+    padding-top: 5%;
+    padding-left: 33%;
+}
+
+div.series h1.titulo{
+    padding-left: 20%;
+    padding-right: 15%;
+    float: left;
+}
+
+div.series {
+    margin: 8% 10% 5px 10%;
+}
+
+div.series section img{
+    width: 650px;
+    height: 380px;
+    
+}
