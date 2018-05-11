@@ -82,7 +82,15 @@ div.series section img{
 			text-align:left;
         }
 		
-/*div elenco*/
+/*formatação elenco*/
+
+
+div.elenco span{
+    font-size: 110%;
+    font-family: got;
+    letter-spacing: 5px;
+    color: black;
+}
 
 div.elenco{
     background-color: burlywood;
@@ -96,12 +104,33 @@ div.elenco{
 }
 
 div.elenco img{
-    width: 146px;
-    height: 186px;
+    width: 180px;
+    height: 230px;
+    float: left;
+    padding-top: 1%;
+    position: absolute;
+    
 }
 
 div.elenco p{
-    float: left;
-    position: relative;
+    padding-left: 30%;
+    padding-top: 2%;
+    font-size: 130%;
 }
-      
+
+div.elenco figcaption{
+    padding-top: 5%;
+}
+
+div.personage{
+    
+}
+
+/*zoom*/
+
+img:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
