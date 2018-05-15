@@ -20,15 +20,10 @@ src: url(../_fonts/Heart Breaking Bad.otf)
 }
 
 h1.cabecalho {
-    padding-top: 10%;
-    padding-left: 35%;
-}
-
-div.series h1.titulo {
-    padding-left: 20%;
-    padding-right: 15%;
-    padding-bottom: 4%;
-    float: left;
+    width: auto;
+    padding-top: 15%;
+    padding-left: 30%;
+    font-family: got;
 }
 
 div.series {
@@ -66,7 +61,7 @@ caption {
     text-shadow: 8px 5px 5px #999;
     text-align: center;
     font-size: 130%;
-    padding: 5px 30px 0 40%;
+    padding: 5px;
     background-color: gainsboro;
     border: 3px solid #ccc;
     border-bottom: none;
@@ -140,7 +135,7 @@ div.elenco figcaption {
 }
 
 div.personage {
-    background-color: cadetblue;
+    background-color: #ffe0cc;
     height: 250px;
     padding: 3%;
 }
@@ -159,13 +154,7 @@ div.personage a {
 
 /*cabeçalho*/
 
-body{
-  min-height:5000px;
-  background-image: url(../_imagens/back.jpg);
-  background-position: top;
-  background-size: 1400px;;
-  background-repeat: no-repeat;
-}
+
 
 header.top-series{
   display:block;
@@ -174,8 +163,8 @@ header.top-series{
   left: 15%;
   right: 15%;
   left: 15%;
-  background: red;
-  height: 30%;
+  background-image: url(../_imagens/back-series.jpeg);
+  height: 10%;
 }
 
 img.logo{
