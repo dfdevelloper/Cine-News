@@ -1,110 +1,126 @@
 @charset "UTF-8";
 
-       .filme1 img.cover{
-            float: left;
-            position: absolute;
-            padding-left: 5%;
-            padding-top: 3%;
-            width: 220px;
-            height: 348px;
-        }
-        .filme1 img.banner {
-            padding-right: 10%;
-            padding-left: 4%;
-            width: 750px; 
-            height: 380px;
+/* imagem capa pequena*/
 
-            
-        }
-        .filme1 h1{
-            padding-left: 50%;
-            font-size: 200%;
-            margin-bottom: 4%;
-            
-        }
-        
-        .filme1 h2{ 
-            font-size: 180%;
-            padding-left: 23%;
-            padding-right: 15%;
-            text-align: center;
-        }
-        
+.filme1 img.cover {
+    padding-left: 5%;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
 
-        
-        .filme1 p{
-            text-align: justify;
-            width: 50%;
-            height: 40%;
-            padding-left: 40%;
-        }
-        	
-		table { 
-            text-align: center;
-			width:700px;
-			margin:15% auto;
-			border-spacing:0;
-			border-right:1px solid #ccc;
-			border-bottom:1px solid #ccc;
-		}
-		
-		caption {
-			font-size:130%;
-			font-weight:bold;
-			padding:5px 30%;
-			background-color:#ECECEC;
-			border:1px solid #ccc;
-			border-bottom:none;
-		}
-		
-		tr, td, th {
-			border:thin solid #ccc;
-			border-bottom:none;
-			border-right:none;
-			padding:5px;
-		}
-		
-		td { 
-			text-align:center;
-		}
-		
-		th {
-			text-align:left;
-		}
-		
-		thead th {
-			text-align:center;
-			background-color:#E0E0E0;
-		}
 
-		thead tr th:first-child {
-			text-align:left;
-		}
-        
-        article {
-            padding-bottom: 20px;
-            margin-bottom: 20%;
-        }
-        
-        iframe{
-            padding-top: 3%;
-            padding-right: 10%;
-            padding-left: 4%;
-            width: 750px; 
-            height: 380px;
-        }
-        
-        video{
-            padding-top: 3%;
-            padding-right: 10%;
-            padding-left: 4%;
-            width: 750px; 
-            height: 480px;
-            
-        }
+/* topo de cada banner com a sinopse*/
 
-        sub{
-            font-size: 65%;
-    
-    
-        }
+#banner-img {
+    margin-top: 8%;
+    padding-bottom: 15px;
+
+
+}
+
+#sinopse {
+    padding: 0;
+    height: auto;
+}
+
+.lead {
+    padding-top: 2%;
+    z-index: 0;
+}
+
+
+.filme1 h1 {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+
+}
+
+.filme1 h2 {
+    font-size: 180%;
+    padding-left: 23%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+
+.filme1 p {
+    text-align: justify;
+    height: auto;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+/*tabela*/
+
+#tabela {}
+
+
+
+caption {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 5px 30%;
+    background-color: #ECECEC;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+tr,
+td,
+th {
+    border: thin solid #ccc;
+    border-bottom: none;
+    border-right: none;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+
+thead th {
+    text-align: center;
+    background-color: #E0E0E0;
+}
+
+thead tr th:first-child {
+    text-align: left;
+}
+
+
+
+article {
+    padding-bottom: 10px;
+    margin-bottom: 10%;
+}
+
+iframe {
+    padding-top: 5%;
+    width: 750px;
+    height: 380px;
+}
+
+
+sub {
+    font-size: 65%;
+
+
+}
+
+/* linhas separação*/
+
+hr {
+    width: 70%;
+    color: #f00;
+    background-color: #f00;
+    height: 10px;
+}

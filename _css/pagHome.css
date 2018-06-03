@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
 h2{
-    font-size: 120%;
-    padding-left: 10%;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 100px;;
+    z-index: 99;
 }
 
 div#interface section#noticia3d h1 {
 
-    padding-left: 10%;
-    margin-top: 10%;
+
     color: black;
-    margin-left: 200px;
     font-family: Ceviche One, cursive;
+    text-align: center;
+    z-index: 99;
 
 }
 
@@ -23,7 +25,8 @@ div#interface  p{
     line-height: 200%;
     margin-left: 20px;
     font-size: larger;
-    font-family: Sriracha, cursive
+    font-family: Sriracha, cursive;
+    z-index: 99;
 }
 
 div#interface p:first-letter{
@@ -32,13 +35,12 @@ div#interface p:first-letter{
 }
 
 section#noticia3d{
-    padding-top: 1px;
+    padding-top: 50px;
 }
 
 section#NoticiaLocadora h1 {
     margin-top: 5%;
-    color: black;
-    font-family: Ceviche One, cursive;   
+    color: black; 
 }
 
 section#NoticiaLocadora h3{
@@ -50,9 +52,8 @@ section#NoticiaLocadora h3{
 }
 
 section#NoticiaLocadora h2{
+    text-align: center;
     vertical-align: baseline;
-
-    margin-top: 5%;
     font-weight: 300;
     font-family: Ceviche One, cursive;
     
@@ -83,8 +84,8 @@ figure.foto-um figcaption {
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 2s;
-    font-family: filme;
     font-size: 30px;
+    text-align: center;
 }
 
 figure.foto-um:hover figcaption{
@@ -100,12 +101,11 @@ div#interface hr {
 
 aside {
     text-align: center;
-    width: 500px;
+    width: auto;
     border-top: 2px solid #cc6633;
     padding-left: 15px;
     font-style: italic;
     margin-bottom: 20px;
-    margin-left: 140px;
     margin-top: auto;
     background: url(../_imagens/aspas.gif) no-repeat;
     

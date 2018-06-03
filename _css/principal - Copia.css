@@ -1,50 +1,49 @@
 @charset "UTF-8";
 
 /*Importação de fontes*/
-
 @font-face {
     font-family: filme;
     src: url("../_fonts/filme.otf");
 }
-
-@font-face {
+@font-face{
     font-family: fakenews;
     src: url("../_fonts/fakenews.otf");
 }
-
-@font-face {
+    @font-face{
     font-family: Ceviche One, cursive;
     src: url('https://fonts.googleapis.com/css?family=Ceviche+One');
 }
-
-@font-face {
+    @font-face{
     font-family: Sriracha, cursive;
     src: url('https://fonts.googleapis.com/css?family=Sriracha');
 }
-
-@font-face {
+    @font-face{
     font-family: Luckiest Guy;
     src: url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 }
-
-@font-face {
+    @font-face{
     font-family: EB Garamond, serif;
     src: url('https://fonts.googleapis.com/css?family=EB+Garamond');
 }
-
-@font-face {
+    @font-face{
     font-family: got;
     src: url("../_fonts/got.ttf");
 }
-
 @font-face {
     font-family: breakingbad;
     src: url(../_fonts/Heart Breaking Bad.otf)
 }
 
+section.got p{
+    color: black;
+    font-size: 110%;
+    padding-top: 4%;
+    text-indent: 20px;
+    margin-bottom: 2%;
+}
+
 
 /*Formatação body*/
-
 body {
     background-image: url("../_imagens/back3.jpg");
     background-position: center center;
@@ -63,13 +62,15 @@ div#interface {
     height: auto;
     background-color: white;
     /*margin: 8% 20% 5px 20%;*/
+
+
 }
 
-section#NoticiaLocadora h1 {
+section#NoticiaLocadora h1{
     text-align: center;
     color: black;
-
-
+    
+    
 }
 
 
@@ -77,72 +78,59 @@ section#NoticiaLocadora h1 {
 
 /*Formatação logotipo*/
 
-#menu .top {
+header#inicial {
 
-    width: 28%;
-    height: auto;
-    margin-top: -80px;    /* versão mobile remover top*/
-    padding-right: 2%;
-    z-index: 2;
-    position: relative;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 5px;
+    height: 10px;
+
+
 }
 
 
 /*Formatação do menu*/
-
-#barra-navegacao {
-    position: relative;
-    z-index: 2;
-    width: auto;
-    padding: 0;
-    
-
-}
-
-#menu {
+nav#menu {
     display: block;
-    background-color: white;
 }
 
-#menu ul {
+nav#menu  ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    margin-top: -710%;
-    z-index: 10;
+    top: 18%;
+    left: 33%;
+
+
+
 }
 
-#menu li {
+nav#menu li{
     display: inline-block;
-    background-color: rgba(195, 0, 0, 100);
+    background-color: rgba(195,0,0,100);
     color: white;
     font-family: Sriracha, cursive;
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
-    box-shadow: 10px 10px 5px #999;
-    font-size: 90%;
+    box-shadow: 10px 10px 5px #999
 }
 
-#menu #none {
+nav#menu li:hover {
+    background-color: rgba(97,7,3,100);
+}
+
+nav#menu h1{
     display: none;
 }
 
-#menu li:hover {
-    background-color: rgba(97, 7, 3, 100);
-}
-
-#menu h1 {
-    display: none;
-}
-
-#menu a {
+nav#menu a {
     color: white;
     text-decoration: none;
 }
 
-#menu a:hover {
-    color: rgba(239, 224, 224, 100);
+nav#menu a:hover {
+    color: rgba(239,224,224,100);
 }
 
 /*Formatação rodapé*/
@@ -150,19 +138,18 @@ section#NoticiaLocadora h1 {
 footer#rodape a {
     target: "_blank";
 }
-
 footer#rodape {
     display: block;
 }
 
-footer#rodape ul {
+footer#rodape ul{
     list-style: none;
     text-transform: uppercase;
-    margin-top: 5%;
-    margin-bottom: -2%;
+    margin-right: 5%;
+    margin-left: 18%;
 }
 
-footer#rodape li {
+footer#rodape li{
     display: inline-block;
     background-color: orange;
     color: white;
@@ -173,11 +160,12 @@ footer#rodape li {
 
 }
 
-footer#rodape a {
+footer#rodape a{
     color: black;
     text-decoration: none;
 }
 
-footer#rodape a:hover {
+footer#rodape a:hover{
     text-decoration: underline;
 }
+
