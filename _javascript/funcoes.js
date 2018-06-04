@@ -4,7 +4,7 @@
 
       switch (check) {
          case 1:
-            document.getElementById("logoHome").src = "../_imagens/" + tipo + ".png";
+            document.getElementById("logoHome").src = "_imagens/" + tipo + ".png";
             break;
          case 2:
             document.getElementById("logoEmCartaz").src = "../_imagens/" + tipo + ".png";
@@ -23,6 +23,9 @@
 }
 
     $(document).ready(function(){
+        
+        
+        $("audio").prop("volume", 0.2);
         
         $("a").attr("target", "_self");
         
