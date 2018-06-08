@@ -4,23 +4,6 @@ function mudaMenu(tipo) {
     switch (check) {
         case 1:
             document.getElementById("logoHome").src = "_imagens/" + tipo + ".png";
-            //função do interruptor luz
-            var interruptor = false;
-
-            $("#turn-on").click(function () {
-
-                if (interruptor == false) {
-
-                    $("body").css("background-image", "url('_imagens/back3-black.jpg')");
-                    $("#turn-on").attr("src", "_imagens/btn2.png");
-                    interruptor = true;
-
-                } else {
-                    $("body").css("background-image", "url('_imagens/back3.jpg')");
-                    $("#turn-on").attr("src", "_imagens/btn.png");
-                    interruptor = false;
-                }
-            });
             break;
         case 2:
             document.getElementById("logoEmCartaz").src = "../_imagens/" + tipo + ".png";
@@ -38,22 +21,64 @@ function mudaMenu(tipo) {
     }
 }
 
+$(document).ready(function () {
+    $("#topo").click(function () {
+        $('html,body').scrollTop(0);
+    });
+});
+
+$(document).ready(function () {
+
+    $("#off").click(function () {
+        var vid = document.getElementById("audio-page");
+        
+        if(vid.volume == 0){
+        vid.volume = 1;  
+             $("#off").attr("src", "../_imagens/icon_sound.png");
+        }else{
+        vid.volume = 0;
+            $("#off").attr("src", "../_imagens/icon_sound2.png");
+        }
+    });
+});
 
 
 $(document).ready(function () {
-    
+
+    //função do interruptor luz na index    //criei funções separadas, pois os "urls" da index sao diferentes de _otherPages
+
+
+    var interruptor = false;
+
+
+    $("#turn-on2").click(function () {
+
+        if (interruptor == false) {
+
+            $("body").css("background-image", "url('_imagens/back3-black.jpg')");
+            $("#turn-on2").attr("src", "_imagens/btn2.png");
+            interruptor = true;
+
+        } else {
+            $("body").css("background-image", "url('_imagens/back3.jpg')");
+            $("#turn-on2").attr("src", "_imagens/btn.png");
+            interruptor = false;
+        }
+    });
+
+
     //função do interruptor luz
     var interruptor = false;
 
     $("#turn-on").click(function () {
 
-        if (interruptor == false && check != 1) {
+        if (interruptor == false) {
 
             $("body").css("background-image", "url('../_imagens/back3-black.jpg')");
             $("#turn-on").attr("src", "../_imagens/btn2.png");
             interruptor = true;
 
-        } else if(interruptor == true && check != 1) {
+        } else if (interruptor == true) {
             $("body").css("background-image", "url('../_imagens/back3.jpg')");
             $("#turn-on").attr("src", "../_imagens/btn.png");
             interruptor = false;
@@ -62,25 +87,20 @@ $(document).ready(function () {
 
 
 
-$('.carousel').carousel({
-    interval: 500
-})
+    $('.carousel').carousel({
+        interval: 500
+    })
 
 
 
 
+    var tam = $(window).width();
 
-$("audio").prop("volume", 0.2);
-
-//$("a").attr("target", "_self");
-
-var tam = $(window).width();
-
-if (tam < 800) {
-    $("#corpo").removeAttr("style");
-    $("#corpo").css("marginTop", "-0.2%");
-    $("#menu").css("marginTop", "3%");
-}
+    if (tam < 800) {
+        $("#corpo").removeAttr("style");
+        $("#corpo").css("marginTop", "-0.2%");
+        $("#menu").css("marginTop", "3%");
+    }
 
 
 });

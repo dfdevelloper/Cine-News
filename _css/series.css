@@ -1,20 +1,5 @@
 @charset "UTF-8";
 
-/*fontes*/
-
-@font-face font-family: EB Garamond,
-serif;
-src: url('https://fonts.googleapis.com/css?family=EB+Garamond');
-font-family: got;
-src: url("../_fonts/got.ttf");
-font-family: breakingbad;
-src: url(../_fonts/Heart Breaking Bad.otf)
-/* página inicial series*/
-
-h1 {
-    text-align: center;
-
-}
 
 .card-img-top {
     width: 640px;
@@ -83,10 +68,11 @@ hr.linha{
 /*formatação personagens*/
 
 #person-bio span {
-    font-size: 110%;
-    font-family: got;
+    font-size: 130%;
+    font-family: sans-serif;
     letter-spacing: 5px;
     color: black;
+    font-weight: 700;
 }
 
 #person-bio span {

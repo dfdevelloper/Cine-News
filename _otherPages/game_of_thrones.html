@@ -36,12 +36,14 @@
 
             <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
                <img style="float: right; margin-top: 10px;" src="../_imagens/btn.png" id="turn-on">
-                <h1 class="cabecalho" style="font-family: got;">Game of Thrones</h1><a href="series.html">voltar</a>
+                <h1 class="cabecalho" style="font-family: got;">Game of Thrones</h1>
                 
-                <audio class="audioDemo" autoplay="autoplay" loop="loop">
+                <audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
                     <source src="../_audio/gameofthrones.mp3" type="audio/mp3" />
                         seu navegador não suporta HTML5
                 </audio>
+                
+                <img id="off" style="float: left;" src="../_imagens/icon_sound.png">
                 
                 <img class="img-fluid" src="../_imagens/cover_got.jpg" alt="game of thrones">
                 <div class="series">
@@ -218,6 +220,9 @@
                 <div style="margin-bottom: 8%;" class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/puLV_-5sp6I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+                <!-- botoes voltar/topo -->
+                <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
+                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
 
                 <!--fim div pricipal-->
             </div>
