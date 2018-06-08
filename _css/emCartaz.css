@@ -124,3 +124,20 @@ hr {
     background-color: #f00;
     height: 10px;
 }
+
+/*emCartaz*/
+
+h1{
+    text-align: center;
+}
+
+#em-breve{
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+#box-em-breve .table-responsive{
+    margin-top: 8%;
+}
+
+

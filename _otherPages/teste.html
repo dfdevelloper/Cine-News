@@ -7,7 +7,6 @@
     <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
     <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
     <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
-    <base target="_blank" footer:rodape/>
     <!--resfresh-->
     <meta http-equiv="refresh" content="320" />
     <!--css-->
@@ -28,83 +27,39 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div style="margin-top: 100px; margin-bottom: 100px;" class="row">
-
-            <div class="col-12 col-md-2 col-lg-2">
-
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../_imagens/cover_twd.jpg" alt="0 slide">
             </div>
-
-            <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
-                <h1 class="cabecalho">Game of Thrones</h1><a href="series.html">voltar</a>
-                <img class="img-fluid" src="../_imagens/cover_got.jpg" alt="game of thrones">
-                <div class="series">
-
-                    <p>Game of Thrones é uma série de televisão norte-americana criada por David Benioff e D. B. Weiss, e baseada na série de livros A Song of Ice and Fire, de George R. R. Martin. Game of Thrones é filmada no Canadá, na Croácia, na Islândia, em Malta, em Marrocos, na Espanha, na Irlanda do Norte, na Escócia e nos Estados Unidos. A primeira temporada da série estreou em 17 de abril de 2011, na HBO, nos Estados Unidos. Até agora, sete temporadas já foram exibidas e a oitava e última temporada estreia em 2019</p>
-                    <p>Muito aguardada desde seus primeiros estágios de desenvolvimento, Game of Thrones foi muito bem recebida pela crítica especializada. Sua primeira temporada foi indicada em vários prêmios, incluindo o Emmy do Primetime de melhor série de drama e o Globo de Ouro de melhor série dramática; Peter Dinklage, que interpreta Tyrion Lannister, venceu o Emmy do Primetime de melhor ator coadjuvante em série dramática e o Globo de Ouro de melhor ator coadjuvante em série de televisão. A série também conquistou o Emmy de melhor projeto de créditos principais, e possui uma das melhores notas entre os telespectadores para séries em exibição no site IMDb. Game of Thrones ganhou 38 Emmys, mais do que qualquer outra série de televisão.</p>
-                    <p>A série entrou para o Livro de Recordes como a série dramática com a maior transmissão simultânea ao redor do mundo. O número foi alcançado graças ao episódio 2 da quinta temporada, intitulado "The House of Black and White". Na sexta temporada da série, a emissora HBO decidiu produzir um talk show para Game of Thrones, chamado After the Thrones, assim como a emissora AMC fez com a série Breaking Bad, produzindo um talk show chamado Talking Bad. Com o mesmo formato de Thronecast e Talking Dead, o programa After the Thrones apresenta recapitulações, comentários e teorias de Game of Thrones e é exibido nas segundas-feiras pela HBO Now, HBO Go, HBO on Demand e pela própria emissora HBO.</p>
-                    <small>Noticia adptada de - <a href="http://www.minhaserie.com.br/">minhaserie.com.br</a></small>
-                </div>
-
-                <!-- tabela -->
-                <div class="container-fluid">
-                    <div class="table-responsive">
-                        <table id="tabela" class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <td class="table-dark"><i class="fas fa-couch"></i>&nbsp;&nbsp;&nbsp;Temporadas</td>
-                                    <td class="table-dark"><i class="far fa-star"></i>&nbsp;&nbsp;&nbsp;Nota</td>
-                                    <td class="table-dark"><i class="fas fa-th-list"></i>&nbsp;&nbsp;&nbsp;Gênero</td>
-                                    <td class="table-dark"><i class="far fa-play-circle"></i>&nbsp;&nbsp;&nbsp;Episódios</td>
-                                </tr>
-
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ação/ Super Herois</td>
-                                    <td>115min</td>
-                                    <td>4.5</td>
-                                    <td>16 anos</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <hr>
-
-                <!-- personagens -->
-
-
-                <h1 class="p-personagens">Principais Personagens</h1>
-
-                <div id="elenco" style="background-color: bisque;" class="container">
-                    <div class="row">
-                       
-                        <div style="" class="col-12 col-md-4 col-lg-4">
-                            <img align="center" id="person" src="../_imagens/PerGot1.jpg" alt="daenerys targaryen">
-                        </div>
-                        
-                        <div id="person-bio" class="col-12 col-md-8 col-lg-8">
-                            <p><span>Daenerys Targaryen</span> é uma princesa exilada, filha do Rei Aerys II Targaryen com sua irmã-esposa a Rainha Rhaella Targaryen. Daenerys é a última sobrevivente confirmada da própria Casa Targaryen. Ela é descrita como uma jovem adolescente, de baixa estatura e com características comuns aos membros da Casa Targaryen: cabelos loiro-platinados e olhos violeta. <a href="https://pt.wikipedia.org/wiki/Daenerys_Targaryen" rel="external" target="_blank">[...]</a><br>
-                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?sa=X&q=Emilia+Clarke&stick=H4sIAAAAAAAAAOPgE-LUz9U3MDXJMU5S4gIx001NcytTtEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqAYx2YuhPAAAA&ved=0ahUKEwitpaqT-f3aAhXHFpAKHT5zC4IQmxMIlwMoATAW&biw=1366&bih=613" target="_blank">Emilia Clarke</a><br>
-                                <b>Criador:</b> <a href="https://www.google.com.br/search?sa=X&q=George+R.+R.+Martin&stick=H4sIAAAAAAAAAOPgE-LWz9U3MDSyzMkwLFHiAHGMzc2NtIyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwDp51jsTQAAAA&ved=0ahUKEwja-JSI-_3aAhUChZAKHV12DGEQmxMInwMoATAW&biw=1366&bih=613" class="actor" target="_blank">George R. R. Martin</a><br>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <!--fim div pricipal-->
-                </div>
-
-
-                <div class="col-12 col-md-2 col-lg-2">
-
-                </div>
-
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../_imagens/cover_ga.jpg" alt="1 slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../_imagens/cover_lp.jpg" alt="2 slide">
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
     </div>
+    
+    <!------>
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
 </body>
 
 </html>

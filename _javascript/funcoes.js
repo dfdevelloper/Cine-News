@@ -22,12 +22,28 @@
     }
 }
 
+
     $(document).ready(function(){
+        
+        
+        
+                
+        $("#menu").onclick(function(){
+            $("body").css("background-image", "url('../_imagens/back3-black.jpg')");
+        });
+
+              
+        $('.carousel').carousel({
+            interval: 500
+        })
+        
+        
+        
         
         
         $("audio").prop("volume", 0.2);
         
-        $("a").attr("target", "_self");
+        //$("a").attr("target", "_self");
         
         var tam = $(window).width();
         
@@ -39,3 +55,4 @@
         
             
     });
+

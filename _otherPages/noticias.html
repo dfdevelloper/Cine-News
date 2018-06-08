@@ -7,13 +7,11 @@
     <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
     <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
     <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
-    <base target="_blank" footer:rodape/>
     <!--resfresh-->
     <meta http-equiv="refresh" content="320" />
     <!--css-->
     <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
     <link rel="stylesheet" type="text/css" href="../_css/noticias.css" />
-
     <!--responsivo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -25,7 +23,7 @@
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
 
     <script>
-        check = 3;
+        check = 6;
     </script>
     <!--atribui um valor como id da pagina-->
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
@@ -37,24 +35,159 @@
     <div class="container-fluid">
         <div style="margin-top: 100px; margin-bottom: 100px;" class="row">
 
-
-            <!-- div centralizar conteudo -->
             <div class="col-12 col-md-2 col-lg-2">
 
             </div>
 
-            <!-- div centralizar conteudo -->
+
             <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
-                <img class="img-fluid" src="../_imagens/rolo-table.png">
+
+                <!-- menu de navegação -->
+
+                <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <img class="img-fluid top" id="logoNews" src="../_imagens/logoNews.png" alt="logo Noticias" />
+
+                            <li><a href="../index.html" onmousemove="mudaMenu('logo1')" onmouseout="mudaMenu('logoNews')" />Home</li>
+                            <li><a href="series.html" onmousemove="mudaMenu('logoSeries')" onmouseout="mudaMenu('logoNews')" />Séries</li>
+                            <li><a href="emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logoNews')" />Em Cartaz</li>
+                            <li><a href="recomendados.html" onmousemove="mudaMenu('logoRecomend')" onmouseout="mudaMenu('logoNews')" />Recomendados</li>
+                            <li><a href="emBreve.html" onmousemove="mudaMenu('logoEmBreve')" onmouseout="mudaMenu('logoNews')" />Em Breve</li>
+                            <li id="none" class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="container-fluid" style="padding: 0;">
+                        <hr id="faixa" style="">
+                    </div>
+                    <div align="center" style="margin-top: 5%;" class="col-12 col-md-12 col-lg-12">
+                        <h1>Notícias de Filmes e Séries</h1>
+                    </div>
+
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                    <!--start-->
+                    <div class="col-12" align="center">
+                        <h4>Jurassic World: Reino Ameaçado se torna maior estreia da história na Coreia</h4>
+                        <p>Jurassic World: Reino Ameaçado acaba de se tornar a maior estreia da história na Coreia do Sul, com uma arrecadação total de US$ 9.7 milhões (R$ 38 milhões) em seu primeiro dia de exibição. O recorde anteriormente pertencia ao filme A Múmia, lançado pela Universal em 2017, que arrecadou US$ 6.9 milhões no seu primeiro dia no país. Jurassic World: Reino Ameaçado | Vídeo te leva para bastidores do “sombrio” novo filme Jurassic World: Reino Ameaçado se passará cerca de 4 anos após os acontecimentos do primeiro longa. A ilha dos dinossauros agora se encontra abandonada e os dinossauros sobreviventes vivem em uma selva. Porém, quando o vulcão dormente da ilha ameaça entrar em erupção, Owen (Chris Pratt) e Claire (Bryce Dallas Howard) resolvem se unir para tentar salvar os dinossauros remanescentes. Jurassic World: Reino Ameaçado, com direção de J.A. Bayona (O Orfanato), tem estreia marcada para 21 de junho de 2018. Jurassic World 3 chegará aos cinemas em 14 de junho de 2021.</p>
+
+                    </div>
+                    <div id="box-under" class="col-12" align="center">
+                        <img class="img-fluid" src="../_imagens/noticias_01.jpg" alt="Imagem do filme Jurrasic World 2">
+                        <small><a href="https://observatoriodocinema.bol.uol.com.br/noticias/2018/06/jurassic-world-reino-ameacado-se-torna-maior-estreia-da-historia-na-coreia" target="_blank">Adaptação</a></small>
+                        <hr>
+                    </div>
+                    <!--end-->
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!--<footer id="rodape">
+                    <nav>
+
+                        <ul align="center">
+                            <li><a href="https://facebook.com" />&copy;CineNews</li>
+                            <li><a href="https://facebook.com" />Facebook</li>
+                            <li><a href="https://facebook.com" />Fale Conosco</li>
+                            <li><a href="https://facebook.com" />Twitter</li>
+                        </ul>
+                    </nav>
+
+                </footer>-->
             </div>
 
-            <!-- div centralizar conteudo -->
-            <div class="col-12 col-md-2 col-lg-2">
 
-            </div>
 
         </div>
     </div>
+    <!------>
+
+    <script src="../_javascript/bootstrap.min.js"></script>
+    <script src="../_javascript/jquery.js"></script>
 </body>
 
 </html>
