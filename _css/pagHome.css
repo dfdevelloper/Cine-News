@@ -11,7 +11,6 @@ div#interface section#noticia3d h1 {
 
 
     color: black;
-    font-family: Ceviche One, cursive;
     text-align: center;
     z-index: 99;
 
@@ -25,7 +24,6 @@ div#interface  p{
     line-height: 200%;
     margin-left: 20px;
     font-size: larger;
-    font-family: Sriracha, cursive;
     z-index: 99;
 }
 
@@ -55,7 +53,6 @@ section#NoticiaLocadora h2{
     text-align: center;
     vertical-align: baseline;
     font-weight: 300;
-    font-family: Ceviche One, cursive;
     
 }
 
