@@ -31,12 +31,12 @@ $(document).ready(function () {
 
     $("#off").click(function () {
         var vid = document.getElementById("audio-page");
-        
-        if(vid.volume == 0){
-        vid.volume = 1;  
-             $("#off").attr("src", "../_imagens/icon_sound.png");
-        }else{
-        vid.volume = 0;
+
+        if (vid.volume == 0) {
+            vid.volume = 1;
+            $("#off").attr("src", "../_imagens/icon_sound.png");
+        } else {
+            vid.volume = 0;
             $("#off").attr("src", "../_imagens/icon_sound2.png");
         }
     });
@@ -44,6 +44,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+
 
     //função do interruptor luz na index    //criei funções separadas, pois os "urls" da index sao diferentes de _otherPages
 
@@ -86,7 +87,15 @@ $(document).ready(function () {
     });
 
 
+    $(document).ready(function () {
+        var tam = $(window).width();
+        alert(tam);
 
+        if (tam < 950) {
+            
+        }
+
+    });
     $('.carousel').carousel({
         interval: 500
     })
@@ -94,13 +103,7 @@ $(document).ready(function () {
 
 
 
-    var tam = $(window).width();
 
-    if (tam < 800) {
-        $("#corpo").removeAttr("style");
-        $("#corpo").css("marginTop", "-0.2%");
-        $("#menu").css("marginTop", "3%");
-    }
 
 
 });
