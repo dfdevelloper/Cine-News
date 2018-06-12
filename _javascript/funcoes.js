@@ -89,20 +89,27 @@ $(document).ready(function () {
 
     $(document).ready(function () {
         var tam = $(window).width();
-        alert(tam);
 
-        if (tam < 950) {
-            
+
+        //caso tela menor 510px
+        if (tam < 650) {
+            $(".top").hide();
+            $(".inicio").removeClass("inicio");
+            $("#turn-on").hide();
+            $("#turn-on2").hide();
+
         }
 
     });
+    
+    
     $('.carousel').carousel({
         interval: 500
     })
 
 
 
-
+    //
 
 
 
