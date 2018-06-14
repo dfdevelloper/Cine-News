@@ -96,6 +96,10 @@ section#NoticiaLocadora h1 {
 
 /*Formatação logotipo*/
 
+.navbarTogglerDemo01{
+    background-color: white;
+}
+
 #menu .top {
 
     width: 28%;
@@ -130,6 +134,7 @@ section#NoticiaLocadora h1 {
 #menu {
     display: block;
     background-color: white;
+    margin-right: 0;
 }
 
 #menu ul {
