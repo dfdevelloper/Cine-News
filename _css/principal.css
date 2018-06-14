@@ -186,6 +186,7 @@ section#NoticiaLocadora h1 {
 #rodape ul {
     list-style: none;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #rodape li {

@@ -60,7 +60,7 @@ $(document).ready(function () {
             $("#turn-on2").attr("src", "_imagens/btn2.png");
             interruptor = true;
 
-        } else {
+        } else if (interruptor == true) {
             $("body").css("background-image", "url('_imagens/back3.jpg')");
             $("#turn-on2").attr("src", "_imagens/btn.png");
             interruptor = false;
