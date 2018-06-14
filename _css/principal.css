@@ -52,7 +52,7 @@
     src: url(../_fonts/doctor.ttf)
 }
 
-@font-face{
+@font-face {
     font-family: thewalk;
     src: url(../_fonts/deadwalking.otf)
 }
@@ -62,11 +62,13 @@
 /*Formatação body*/
 
 body {
+
     background-image: url("../_imagens/back3.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 
 }
 
@@ -78,6 +80,7 @@ div#interface {
     /*width: 60%;*/
     height: auto;
     background-color: white;
+    border-radius: 0.5%;
     /*margin: 8% 20% 5px 20%;*/
 }
 
@@ -103,6 +106,16 @@ section#NoticiaLocadora h1 {
     position: relative;
 }
 
+#loading {
+
+    width: 600px;
+    height: 500px;
+    margin-bottom: -35%;
+    margin-left: 28%;
+    z-index: 3;
+    position: relative;
+    margin-top: 5%;
+}
 
 /*Formatação do menu*/
 
@@ -159,11 +172,44 @@ section#NoticiaLocadora h1 {
     color: rgba(239, 224, 224, 100);
 }
 
+/* rodape */
+
+#rodape{
+    margin-bottom: -8%;
+}
+
+#rodape ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#rodape li {
+    display: inline-block;
+    background-color: rgba(195, 0, 0, 100);
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    box-shadow: 10px 10px 5px #999;
+    font-size: 90%;
+
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    color: rgba(239, 224, 224, 100);
+}
+
 
 
 #turn-on2 {
     cursor: pointer;
-    
+    background-color: white;
+
 }
 
 #off {
@@ -177,8 +223,7 @@ section#NoticiaLocadora h1 {
 
 }
 
-.inicio{
-    margin-top: 100px; 
+.inicio {
+    margin-top: 100px;
     margin-bottom: 100px;
 }
-

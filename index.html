@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -24,6 +24,20 @@
 
     <script>
         check = 1;
+
+        //função  carregando a pagina
+        $(document).ready(function() {
+            $("body").css("background-image", "url('_imagens/back3-black.jpg')");
+        });
+
+
+        window.setInterval(function() {
+            $("#interface").fadeTo(2000, 1);
+            $("#loading").fadeTo(3000, 0);
+            $("body").css("background-image", "url('_imagens/back3.jpg')");
+            $("#loading").css("display", "none");
+
+        }, 200);
     </script>
     <!--atribui um valor como id da pagina-->
     <script language="JavaScript" src="_javascript/funcoes.js"></script>
@@ -31,24 +45,30 @@
 </head>
 
 <body>
+
+    <img class="img-fluid" id="loading" src="_imagens/cinema-loading.gif">
+
     <div class="container-fluid">
-        <div id="corpo" class="row inicio">
-           
-            
+        <div id="corpo" class="row inicio" style="background-color: white;">
+
+
             <div class="col-12 col-md-2 col-lg-2">
 
             </div>
 
-            <div id="interface" style="background-color: white; height: auto" class="col-12 col-md-8 col-lg-8">
+
+            <div id="interface" style="height: auto; opacity: 0" class="col-12 col-md-8 col-lg-8">
 
                 <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light bg-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
-                   <img style="padding-right: 2%; background-color: white;" src="_imagens/btn.png" id="turn-on2">
+  </button>            
+                   
+                    <img class="img-fluid" style="padding-right: 2%;" src="_imagens/btn.png" id="turn-on2">
+                    
                     <div style="background-color: white;" class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
-                           
+
                             <img class="img-fluid top" id="logoHome" src="_imagens/logo1.png" alt="Logo Home" />
 
                             <li><a class="nav-item" href="_otherPages/emcartaz.html" onmousemove="mudaMenu('logoEmCartaz')" onmouseout="mudaMenu('logo1')" />Em cartaz</li>
@@ -61,13 +81,14 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </nav>
 
 
 
                 <section id="noticia3d">
-                    
+
+
 
                     <h1><strong>Bem vindo ao CineNews!</strong><br>
                         <h1 class="h3">Só aqui você encontra tudo sobre cinema...</h1>
@@ -134,34 +155,31 @@
 
                 <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
 
-            
 
-
-                <!-- <footer id="rodape">
+                <footer id="rodape">
                     <nav>
-
                         <ul align="center">
-                            <li><a href="https://facebook.com" />&copy;CineNews</li>
-                            <li><a href="https://facebook.com" />Facebook</li>
-                            <li><a href="https://facebook.com" />Fale Conosco</li>
-                            <li><a href="https://facebook.com" />Twitter</li>
+                            <li><a href="#"/>&copy;CineNews</li>
+                            <li><a href="#" />Facebook</li>
+                            <li><a href="#" />Fale Conosco</li>
                         </ul>
                     </nav>
-
-                </footer> -->
+                </footer> 
 
             </div>
+
 
             <div class="col-12 col-md-2 col-lg-2">
 
             </div>
+ 
         </div>
 
     </div>
 
     <!------>
-    <script src="../_javascript/bootstrap.min.js"></script>
-    <script src="../_javascript/jquery.js"></script>
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.js"></script>
 </body>
 
 </html>

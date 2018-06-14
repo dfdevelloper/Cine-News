@@ -91,21 +91,30 @@ $(document).ready(function () {
         var tam = $(window).width();
 
 
+
         //caso tela menor 510px
-        if (tam < 650) {
+        if (tam < 730) {
             $(".top").hide();
             $(".inicio").removeClass("inicio");
             $("#turn-on").hide();
             $("#turn-on2").hide();
+            $("#interface").css("marginTop", "-0.8px");
+            $("#loading").css("marginLeft", "0");
+            $("#loading").css("marginTop", "25%");
+            $("#loading").css("height", "auto");
+            $("#rodape").css("paddingTop", "8%");
 
         }
 
+
+
     });
-    
-    
-    $('.carousel').carousel({
-        interval: 500
-    })
+
+
+
+
+
+
 
 
 
