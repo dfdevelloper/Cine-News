@@ -7,7 +7,6 @@
     <meta name="author" content="Danillo, Maikon, Ricardo e Alessandro" />
     <meta name="keywords" content="cinema, filmes, series, dvd, seriados, laçamentos" />
     <meta name="description" content="Pagina sobre cinema, filmes e seriados" />
-    <base target="_blank" footer:rodape/>
     <!--resfresh-->
     <meta http-equiv="refresh" content="320" />
     <!--css-->
@@ -36,12 +35,15 @@
             </div>
 
             <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
-                <h1 class="cabecalho">Breaking Bad</h1><a href="series.html">voltar</a>
+               <img style="float: right; margin-top: 10px;" src="../_imagens/btn.png" id="turn-on">
+                <h1 class="cabecalho" style="font-family: breakingbad; font-size: 500%;">Breaking Bad</h1>
                 
-                <audio autoplay="autoplay" loop="loop">
+                <audio audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
                     <source src="../_audio/BreakingBad.mp3" type="audio/mp3" />
                         seu navegador não suporta HTML5
                 </audio>
+                
+                <img id="off" style="float: left;" src="../_imagens/icon_sound.png">
                 
                 <img class="img-fluid" src="../_imagens/banner_breakingbad.jpg" alt="game of thrones">
                 <div class="series">
@@ -80,7 +82,7 @@
                 <!-- personagens -->
 
 
-                <h1 class="titulo-per" style="" >Principais Personagens</h1>
+                <h1 class="titulo-per" style="font-family: breakingBad; font-size: 500%" >Principais Personagens</h1>
 
                 <hr class="linha">
 
@@ -171,10 +173,17 @@
                             <img align="center" id="person" src="../_imagens/PerBB6.jpg" alt="Sansa Stark" src="../_imagens/PerGot5.jpg" alt="Sansa Stark">
                         </div>
 
+<<<<<<< HEAD
                         <div id="person-bio" class="col-12 col-md-8 col-lg-9">
                             <p><span>Walter White Jr</span> é o filho de Walter White, tem 16 anos no inicio da série e tem paralisia cerebral, o que o faz falar de forma estranha e usar muletas por toda a série. Não são ditos grandes fatos sobre a infância ou a primeira metade da sua adolescência. <a href="https://pt.wikipedia.org/wiki/Jon_Snow" rel="external" target="_blank">[...]</a><br>
                                 <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?q=RJ+Mitte&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK2sNCoyUQKzjfMKC8sMtEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqAbyNj2RQAAAA&sa=X&ved=0ahUKEwiIpraY18rbAhUPl5AKHWNbAM0QmxMIyQEoATAT&biw=1920&bih=974" target="_blank">RJ Mitte</a><br>
                                 <b>Criador:</b> <a href="https://www.google.com.br/search?ei=regdW8uXAcKrwASwirjYDQ&q=Vince+Gilligan&oq=Vince+Gilligan&gs_l=psy-ab.12...0.0.0.2068.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.7aPeMP679Tg" class="actor" target="_blank">Vince Gilligan</a><br>
+=======
+                        <div style="overflow: auto;" id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Sansa Stark</span> é a filha mais velha de Ned e Catelyn Stark. Ela nasceu e cresceu em Winterfell, até deixar a fortaleza com seus pais e irmãos no começo da série. <br>À medida que o seriado vem se desenvolvendo, Sansa Stark vem recebendo aclamação da crítica pelo desenvolvimento da personagem e sua mudança de um menina ingênua para uma forte jovem mulher <a href="https://pt.wikipedia.org/wiki/Jon_Snow" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?sa=X&q=Sophie+Turner&stick=H4sIAAAAAAAAAOPgE-LSz9U3MC4sNjBLVgKzM8wsksuLtEyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUousCnISK1NTFJIqAUtx25tQAAAA&ved=0ahUKEwjr49vv-f3aAhUNl5AKHe_mBtQQmxMIrgMoATAX&biw=1366&bih=613" target="_blank">Sophie Turner</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?sa=X&q=George+R.+R.+Martin&stick=H4sIAAAAAAAAAOPgE-LWz9U3MDSyzMkwLFHiAHGMzc2NtIyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwDp51jsTQAAAA&ved=0ahUKEwja-JSI-_3aAhUChZAKHV12DGEQmxMInwMoATAW&biw=1366&bih=613" class="actor" target="_blank">George R. R. Martin</a><br>
+>>>>>>> dcc862c41b17f7e9855bd6342378b4f5844a712f
                             </p>
                         </div>
                     </div>
@@ -216,6 +225,9 @@
                 <div style="margin-bottom: 8%;" class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ceqOTZnhgY8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+                <!-- botoes voltar/topo -->
+                <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
+                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
 
                 <!--fim div pricipal-->
             </div>

@@ -39,8 +39,24 @@
 
 @font-face {
     font-family: breakingbad;
-    src: url(../_fonts/Heart Breaking Bad.otf)
+    src: url(../_fonts/breakingBad.otf)
 }
+
+@font-face {
+    font-family: narcos;
+    src: url(../_fonts/narcos.ttf)
+}
+
+@font-face {
+    font-family: doctor;
+    src: url(../_fonts/doctor.ttf)
+}
+
+@font-face{
+    font-family: thewalk;
+    src: url(../_fonts/deadwalking.otf)
+}
+
 
 
 /*Formatação body*/
@@ -85,7 +101,7 @@ section#NoticiaLocadora h1 {
 
     width: 28%;
     height: auto;
-    margin-top: -80px;    /* versão mobile remover top*/
+    margin-top: -80px;
     padding-right: 2%;
     z-index: 2;
     position: relative;
@@ -96,10 +112,9 @@ section#NoticiaLocadora h1 {
 
 #barra-navegacao {
     position: relative;
-    z-index: 2;
     width: auto;
     padding: 0;
-    
+    background-color: white;
 
 }
 
@@ -121,7 +136,6 @@ section#NoticiaLocadora h1 {
     display: inline-block;
     background-color: rgba(195, 0, 0, 100);
     color: white;
-    font-family: Sriracha, cursive;
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
@@ -150,39 +164,26 @@ section#NoticiaLocadora h1 {
     color: rgba(239, 224, 224, 100);
 }
 
-/*Formatação rodapé*/
 
-footer#rodape a {
-    target: "_blank";
+
+#turn-on2 {
+    cursor: pointer;
+    
 }
 
-footer#rodape {
-    display: block;
+#off {
+    cursor: pointer;
+    margin-bottom: 3px;
 }
 
-footer#rodape ul {
-    list-style: none;
-    text-transform: uppercase;
-    margin-top: 5%;
-    margin-bottom: -2%;
-}
-
-footer#rodape li {
-    display: inline-block;
-    background-color: orange;
-    color: white;
-    font-family: Ceviche One, cursive;
-    padding: 10px;
-    margin: 2px;
-    box-shadow: 10px 10px 5px #999;
-
-}
-
-footer#rodape a {
-    color: black;
+#back-series {
     text-decoration: none;
+    color: black;
+
 }
 
-footer#rodape a:hover {
-    text-decoration: underline;
+.inicio{
+    margin-top: 100px; 
+    margin-bottom: 100px;
 }
+
