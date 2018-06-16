@@ -23,12 +23,32 @@
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
 
+    <script>
+        
+        // função toggle entre divs 
+        
+        $(document).ready(function() {
+
+            $(".btn-ww").click(function() {
+                $(".ww").toggle();
+            });
+
+        });
+    </script>
+    <style>
+        .btn-ww{
+            background-color: darksalmon;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div class="container-fluid">
-        <div style="margin-top: 100px; margin-bottom: 100px;" class="row">
+        <div class="row inicio">
 
             <div class="col-12 col-md-2 col-lg-2">
 
@@ -82,22 +102,45 @@
                 <!-- personagens -->
 
 
-                <h1 class="titulo-per" style="font-family: breakingBad; font-size: 500%">Principais Personagens</h1>
+                <h1 class="titulo-per" style="font-family: breakingBad; font-size: 380%">Principais Personagens</h1>
 
                 <hr class="linha">
+                
 
-                <!-- bloco de cada personagem-->
-                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
+                <!-- div primeiro personagem -->
+                
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container ww">
                     <div class="row">
 
                         <div style="" class="col-12 col-md-4 col-lg-3">
-                            <img align="center" id="person" src="../_imagens/PerBB1.jpg" alt="Walter White">
+                            <img id="person" class="walterwhite" src="../_imagens/PerBB1-1.jpg" alt="Walter White">
                         </div>
 
                         <div id="person-bio" class="col-12 col-md-8 col-lg-9">
                             <p><span>Walter White</span> já foi um químico promissor e um dos fundadores da bilionária empresa Gray Matter Technologies, porém logo saiu dela, vendendo suas partes nas ações por cinco mil dólares por razões pessoais, tornando-se um professor de química infeliz e desiludido. Após ser diagnosticado com câncer pulmonar nível 3, resolve fabricar metanfetamina para garantir a segurança financeira de sua família após sua morte. <a href="https://pt.wikipedia.org/wiki/Walter_White_(Breaking_Bad)" rel="external" target="_blank">[...]</a><br>
                                 <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
                                 <b>Criador:</b> <a href="https://www.google.com.br/search?q=Vince+Gilligan&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK0qLMyrVAKzjSstk5MrtYyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwAHkRxRTgAAAA&sa=X&ved=0ahUKEwiqobWB5rrbAhUKkpAKHZV5BLMQmxMI4wEoATAZ&biw=1242&bih=557" class="actor" target="_blank">Vince Gilligan</a><br>
+                                <button title="alternar personagem" class="btn-ww"><i class="fas fa-exchange-alt"></i></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- div troca personagem -->
+                
+                <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset; display: none;" class="container ww">
+                    <div class="row">
+
+                        <div style="" class="col-12 col-md-4 col-lg-3">
+                            <img id="person" class="walterwhite" src="../_imagens/PerBB1.jpg" alt="Walter White">
+                        </div>
+
+                        <div id="person-bio" class="col-12 col-md-8 col-lg-9">
+                            <p><span>Heisenberg</span> ...pseudônimo que Walter usou para trabalhar no tráfico
+                               de metanfetamina, foi usado pela primeira vez em suas negociações com Tuco, um traficante local, este apelido é uma homenagem a <i>Werner Heisenberg</i> que criou o princípio da incerteza, que estabelece que seja impossível determinar simultaneamente a posição e a velocidade de um elétron ou qualquer outra partícula com certeza.<br>
+                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
+                                <b>Criador:</b> <a href="https://www.google.com.br/search?q=Vince+Gilligan&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK0qLMyrVAKzjSstk5MrtYyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwAHkRxRTgAAAA&sa=X&ved=0ahUKEwiqobWB5rrbAhUKkpAKHZV5BLMQmxMI4wEoATAZ&biw=1242&bih=557" class="actor" target="_blank">Vince Gilligan</a><br>
+                                <button class="btn-ww" title="alternar personagem"><i class="fas fa-exchange-alt"></i></button>
                             </p>
                         </div>
                     </div>
@@ -123,7 +166,7 @@
                     <div class="row">
 
                         <div style="" class="col-12 col-md-4 col-lg-3">
-                            <img align="center" id="person" src="../_imagens/PerBB3.jpg" alt="tyrion lannister" alt="Skyler White">
+                            <img align="center" id="person" src="../_imagens/PerBB3.jpg" alt="Skyler" alt="Skyler White">
                         </div>
 
                         <div id="person-bio" class="col-12 col-md-8 col-lg-9">

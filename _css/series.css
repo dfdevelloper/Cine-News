@@ -11,10 +11,13 @@
 
 }
 
+.card{
+    margin-bottom: 10%;
+}
+
+
 .content {
     margin-top: 4%;
-
-
 }
 
 
@@ -93,7 +96,7 @@ hr.linha{
 #person {
     width: 100%;
     float: left;
-    margin-top: 25px;
+    margin-top: 25%;
 
 }
 

@@ -1,3 +1,4 @@
+
 //função muda os icones do menu de acordo com os valores na var. Check
 function mudaMenu(tipo) {
 
@@ -70,6 +71,7 @@ $(document).ready(function () {
 
     //função do interruptor luz
     var interruptor = false;
+    
 
     $("#turn-on").click(function () {
 
@@ -83,16 +85,17 @@ $(document).ready(function () {
             $("body").css("background-image", "url('../_imagens/back3.jpg')");
             $("#turn-on").attr("src", "../_imagens/btn.png");
             interruptor = false;
+            
         }
+
     });
 
 
     $(document).ready(function () {
         var tam = $(window).width();
+        
 
-
-
-        //caso tela menor 510px
+        //caso tela menor sistema ajusta elemento
         if (tam < 730) {
             $(".top").hide();
             $(".inicio").removeClass("inicio");
@@ -103,6 +106,10 @@ $(document).ready(function () {
             $("#loading").css("marginTop", "25%");
             $("#loading").css("height", "auto");
             $("#rodape").css("paddingTop", "8%");
+            $("#person").css("marginTop", "15px");
+            if (tam < 777){
+                $("#interface").css("border-radius", "0");
+            }
 
         }
 
