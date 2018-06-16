@@ -81,7 +81,7 @@ div#interface {
     height: auto;
     background-color: white;
     border-radius: 15px;
-    
+
 }
 
 section#NoticiaLocadora h1 {
@@ -95,8 +95,6 @@ section#NoticiaLocadora h1 {
 
 
 /*Formatação logotipo*/
-
-
 
 .top {
 
@@ -124,8 +122,8 @@ section#NoticiaLocadora h1 {
 #barra-navegacao {
     width: auto;
     padding: 0;
-    background-color: white; /*cor da nav bar pequena*/
-
+    background-color: white;
+    /*cor da nav bar pequena*/
 }
 
 #menu {
@@ -177,7 +175,7 @@ section#NoticiaLocadora h1 {
 
 /* rodape */
 
-#rodape{
+#rodape {
     margin-bottom: -8%;
 }
 
@@ -233,5 +231,21 @@ section#NoticiaLocadora h1 {
     margin-bottom: 100px;
 }
 
+/* btn topo */
 
+#topo {
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    left: 85%;
+    top: 90%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px;
+    background-color: white;
+    display: none;
+}
 
+#topo:hover{
+    background-color: grey;
+}

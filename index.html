@@ -23,20 +23,20 @@
     <script>
         //atribui um valor como id da pagina
         check = 1;
-        //função  carregando a pagina       
-            window.setInterval(function() {
-                $("#interface").fadeTo(2000, 1);
-                $("#loading").fadeTo(3000, 0);
-                $("#loading").css("display", "none");
-                if (back == 1){  //verifica para nao remover fundo preto
-                    $("body").css("background-image", "url('_imagens/back3.jpg')");
-                    back++;
-                }
-            }, 1000);
+        //função  carregando a pagina  
+        window.setInterval(function() {
+            $("#interface").fadeTo(2000, 1);
+            $("#loading").fadeTo(3000, 0);
+            $("#loading").css("display", "none");
+            if (back == 1) { //verifica para nao remover fundo preto
+                $("body").css("background-image", "url('_imagens/back3.jpg')");
+                back++;
+            }
+        }, 1000);
     </script>
     <script language="JavaScript" src="_javascript/funcoes.js"></script>
 
-    
+
 
 </head>
 
@@ -55,7 +55,7 @@
 
             </div>
 
-                                <!-- opacidade 0 apenas na index -->
+            <!-- opacidade 0 apenas na index -->
             <div id="interface" style="opacity: 0;" class="col-12 col-md-8 col-lg-8">
 
                 <nav id="barra-navegacao" align="center" class="navbar navbar-expand-lg navbar-light">
@@ -108,10 +108,13 @@
 
                         <br>Assim, quando desejávamos assistir a estes filmes, fazia-se necessáro utilizarmos um óculos 3D com uma lente vermelha e a outra azul (ou verde), como os da figura do topo desta página. Estas lentes "obrigavam" um olho a enxergar a seção vermelha da imagem e a outra, a seção azul (ou verde). &nbsp;É devido às diferenças entre as duas lentes que o cérebro as interpreta como uma imagem de três dimensões. Entretanto, por conta da utilização de lentes coloridas, a coloração da "imagem final" não é precisa, de modo que há dados que relatam que esta tecnologia trouxe muitos problemas para as pessoas como dores de cabeça, lesões oculares e náusea. Por essa razão, outra técnica passou a ser mais utilizada, que é o modo polarizado. Embora seja mais caro e complexo, é mais fiel e mantém as cores originais. Cada imagem é projetada com uma polaridade diferente (às vezes com dois projetores simultâneos). Nessa técnica, também são necessários óculos com lentes especiais para a visualização. Cada lente dos óculos possui filtro de polarização diferente: uma lente filtra as ondas polarizadas na vertical e a outra na horizontal. Como a lente polarizada escurece um pouco as imagens, a tela para projeção é prateada, a fim de aumentar o brilho da imagem.<br>
 
+
                         <small>Noticia adptada de - 
                 <a href="http://www.sofisica.com.br/conteudos/curiosidades/cinema_3d.php">Sofisica.com.br</a></small>
                 </section>
-
+                <div>
+                    <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
+                </div>
                 <hr class="division">
 
                 <section id="NoticiaLocadora">
@@ -144,16 +147,12 @@
                         <h3>Quando falo a amigos que ainda frequento locadoras, eles acham estranho. Assisto na internet, vou ao cinema, mas mesmo assim gosto de locadora, um local onde posso acessar rapidamente filmes que perco nos cinemas. Isso aqui faz parte da vida da minha família, um local que venho com meu filho desde pequenino e hoje ele já está com 10 anos. Estou muito triste.<br> -diz uma moradora local.</h3>
                     </aside>
 
-                    <figure class="foto-quatro">
+                    <figure style="margin-bottom: 8%;" class="foto-quatro">
                         <img class="img-fluid" src="_imagens/noticiaLocadora3.jpg" alt="Locadora em Holambra" title="Locadora de Dvds, um comércio muito comum que hoje já entra em estinção." />
                         <figcaption>Locadora em Holambra -SP (Foto: Maria Elisa Moraes - Site JC Holambra)</figcaption>
+                        <small>Noticia adptada de - <a href="https://g1.globo.com/sp/bauru-marilia/noticia/ultima-grande-locadora-de-filmes-de-bauru-fecha-as-portas-resistimos-o-quanto-pudemos-diz-dona.ghtml">g1.com.br</a></small>
                     </figure>
                 </section>
-
-                <small>Noticia adptada de - <a href="https://g1.globo.com/sp/bauru-marilia/noticia/ultima-grande-locadora-de-filmes-de-bauru-fecha-as-portas-resistimos-o-quanto-pudemos-diz-dona.ghtml">g1.com.br</a></small>
-
-                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
-
 
                 <footer id="rodape">
                     <nav>
@@ -164,7 +163,6 @@
                         </ul>
                     </nav>
                 </footer>
-
             </div>
 
 
@@ -175,8 +173,8 @@
         </div>
 
     </div>
-
     <!------>
+
     <script src="_javascript/bootstrap.min.js"></script>
     <script src="_javascript/jquery.js"></script>
 </body>

@@ -24,9 +24,8 @@
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
 
     <script>
-        
         // função toggle entre divs 
-        
+
         $(document).ready(function() {
 
             $(".btn-ww").click(function() {
@@ -36,7 +35,7 @@
         });
     </script>
     <style>
-        .btn-ww{
+        .btn-ww {
             background-color: darksalmon;
             float: right;
             cursor: pointer;
@@ -57,6 +56,10 @@
             <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
                 <img style="float: right; margin-top: 10px;" src="../_imagens/btn.png" id="turn-on">
                 <h1 class="cabecalho" style="font-family: breakingbad; font-size: 500%;">Breaking Bad</h1>
+
+                <div>
+                    <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
+                </div>
 
                 <audio audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
                     <source src="../_audio/BreakingBad.mp3" type="audio/mp3" />
@@ -105,10 +108,10 @@
                 <h1 class="titulo-per" style="font-family: breakingBad; font-size: 380%">Principais Personagens</h1>
 
                 <hr class="linha">
-                
+
 
                 <!-- div primeiro personagem -->
-                
+
                 <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container ww">
                     <div class="row">
 
@@ -125,9 +128,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- div troca personagem -->
-                
+
                 <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset; display: none;" class="container ww">
                     <div class="row">
 
@@ -136,8 +139,7 @@
                         </div>
 
                         <div id="person-bio" class="col-12 col-md-8 col-lg-9">
-                            <p><span>Heisenberg</span> ...pseudônimo que Walter usou para trabalhar no tráfico
-                               de metanfetamina, foi usado pela primeira vez em suas negociações com Tuco, um traficante local, este apelido é uma homenagem a <i>Werner Heisenberg</i> que criou o princípio da incerteza, que estabelece que seja impossível determinar simultaneamente a posição e a velocidade de um elétron ou qualquer outra partícula com certeza.<br>
+                            <p><span>Heisenberg</span> ...pseudônimo que Walter usou para trabalhar no tráfico de metanfetamina, foi usado pela primeira vez em suas negociações com Tuco, um traficante local, este apelido é uma homenagem a <i>Werner Heisenberg</i> que criou o princípio da incerteza, que estabelece que seja impossível determinar simultaneamente a posição e a velocidade de um elétron ou qualquer outra partícula com certeza.<br>
                                 <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
                                 <b>Criador:</b> <a href="https://www.google.com.br/search?q=Vince+Gilligan&stick=H4sIAAAAAAAAAOPgE-LSz9U3MK0qLMyrVAKzjSstk5MrtYyyk6300zKTSzLz8xJz4kvzMstSi4pTkYSSMxKLEpNLUouskotSE0vyiwAHkRxRTgAAAA&sa=X&ved=0ahUKEwiqobWB5rrbAhUKkpAKHZV5BLMQmxMI4wEoATAZ&biw=1242&bih=557" class="actor" target="_blank">Vince Gilligan</a><br>
                                 <button class="btn-ww" title="alternar personagem"><i class="fas fa-exchange-alt"></i></button>
