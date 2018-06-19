@@ -20,12 +20,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
 
     <script>
+        //atribui um valor como id da pagina-->
         check = 5;
     </script>
-    <!--atribui um valor como id da pagina-->
+    
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+    
     <style>
         .division {
             background-color: darkred;
@@ -95,7 +100,6 @@
                                     <h4>2003</h4>
                                 </figcaption>
                             </figure>
-
                         </div>
                         <div class="carousel-item">
                             <figure id="legenda">
@@ -214,17 +218,14 @@
                 <!-- fim carousel -->
 
 
-                <div>
-                    <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                </div>
                 <!--bloco A-->
                 <hr>
-                <div class="container">
+                <div  class="container">
                     <div id="box-content" class="row">
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div  class="col-12 col-md-4 col-lg-4">
                             <img id="title-rec" src="../_imagens/title_pdmt.jpg" alt="perdido em marte" class="img-fluid">
                         </div>
-                        <div class="col-12 col-md-8 col-lg-8">
+                        <div  class="col-12 col-md-8 col-lg-8">
                             <h1 style="font-size: 200%;">Perdido em Marte</h1>
                             <h3>Sinopse:</h3>
                             <p id="description" style="overflow: hidden">O astronauta Mark Watney (Matt Damon) é enviado a uma missão em Marte. Após uma severa tempestade ele é dado como morto, abandonado pelos colegas e acorda sozinho no misterioso planeta com escassos suprimentos, sem saber como reencontrar os companheiros ou retornar à Terra.</p>
@@ -246,7 +247,7 @@
                             <p style="margin-top: 4%;"><b>Lançamento:</b> 07/09/2017</p>
                             <p><b>Título original:</b> It</p>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div  class="col-12 col-md-4 col-lg-4">
                             <img id="title-rec" src="../_imagens/slide_it.jpg" alt="ITacoisa" class="img-fluid">
                         </div>
                     </div>
@@ -456,6 +457,26 @@
     <!------>
     <script src="../_javascript/bootstrap.min.js"></script>
     <script src="../_javascript/jquery.js"></script>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>

@@ -22,6 +22,9 @@
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+    <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
 
     <script>
         // função toggle entre divs 
@@ -56,10 +59,6 @@
             <div id="interface" style="background-color: white;" class="col-12 col-md-8 col-lg-8">
                 <img style="float: right; margin-top: 10px;" src="../_imagens/btn.png" id="turn-on">
                 <h1 class="cabecalho" style="font-family: breakingbad; font-size: 500%;">Breaking Bad</h1>
-
-                <div>
-                    <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                </div>
 
                 <audio audio id="audio-page" class="audioDemo" autoplay="autoplay" loop="loop">
                     <source src="../_audio/BreakingBad.mp3" type="audio/mp3" />
@@ -287,6 +286,26 @@
 
         </div>
     </div>
+    
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+    <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>

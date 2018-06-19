@@ -22,6 +22,9 @@
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
 
 </head>
 
@@ -46,11 +49,9 @@
 
                 <img class="img-fluid" src="../_imagens/banner_thewalkingdead.jpg" alt="the walking dead">
                 <div class="series">
-                    <div>
-                        <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                    </div>
-                    <p>Um apocalipse provoca uma infestação de zumbis na cidade de Cynthiana, em Kentucky, nos Estados Unidos, e o oficial de polícia Rick Grimes (Andrew Lincoln) descobre que os mortos-vivos estão se propagando progressivamente. Ele decide unir-se aos homens e mulheres sobreviventes para que tenham mais força para combater o fenômeno que os atinge. O grupo percorre diferentes lugares em busca de soluções para o problema.</p>
-                    <small>Noticia adptada de - <a href="http://www.adorocinema.com">adorocinema.com</a></small>
+    
+                    <p>The Walking Dead conta a história de um pequeno grupo de sobreviventes de um apocalipse de zumbis, ou "walkers", como os personagens os denominam. A maior parte da história se passa nos arredores de Atlanta e, em seguida, em torno da região rural do norte da Geórgia. Os sobreviventes são vistos em busca de refúgio e de um local seguro, longe das hordas de mortos-vivos, que devoram pessoas e que cuja mordida é infecciosa para os seres humanos. Os sobreviventes tem conhecimentos limitados sobre o que realmente está acontecendo no mundo</p>
+                    <small>Noticia adptada de - <a href="https://pt.wikipedia.org/wiki/The_Walking_Dead_(série_de_televisão)#Sinopse">wikipédia.com</a></small>
                 </div>
 
                 <!-- tabela -->
@@ -219,7 +220,6 @@
                 </div>
                 <!-- botoes voltar/topo -->
                 <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
-                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
 
                 <!--fim div pricipal-->
 
@@ -241,6 +241,26 @@
 
         </div>
     </div>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>

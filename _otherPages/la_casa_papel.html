@@ -23,6 +23,9 @@
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
 
 </head>
 
@@ -47,10 +50,7 @@
 
                 <img class="img-fluid" src="../_imagens/banner_lacasadepapel.jpg" alt="la casa de papel">
                 <div class="series">
-                    <div>
-                        <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                    </div>
-
+                
                     <p>Oito habilidosos ladrões se trancam na Casa da Moeda da Espanha com o ambicioso plano de realizar o maior roubo da história e levar com eles mais de 2 bilhões de euros. Para isso, a gangue precisa lidar com as dezenas de pessoas que manteve como refém, além dos agentes da força de elite da polícia, que farão de tudo para que a investida dos criminosos fracasse</p>
                     <small>Noticia adptada de - <a href="http://www.adorocinema.com">adorocinema.com</a></small>
                 </div>
@@ -197,6 +197,26 @@
 
         </div>
     </div>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>

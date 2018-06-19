@@ -114,18 +114,8 @@ $(document).ready(function () {
         }
 
     });
-
-    $(window).scroll(function () {
-        var tamScroll = $(this).scrollTop();
-        if (tamScroll > 300) {
-            $("#topo").css("display", "content").fadeIn("slow");
-        } else if (tamScroll < 300) {
-            $("#topo").css("display", "none").fadeIn("slow");
-        }
-    });
-   
-
-
-
-
+    
+    
 });
+
+ 

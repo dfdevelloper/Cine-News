@@ -223,6 +223,8 @@ section#NoticiaLocadora h1 {
 #back-series {
     text-decoration: none;
     color: black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -249,3 +251,6 @@ section#NoticiaLocadora h1 {
 #topo:hover{
     background-color: grey;
 }
+
+
+

@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
 
     <script>
         check = 6;
@@ -70,9 +73,7 @@
                     </div>
                     <div align="center" style="margin-top: 5%;" class="col-12 col-md-12 col-lg-12">
                         <h1 style="font-size: 200%;">Notícias de Filmes e Séries</h1>
-                        <div>
-                            <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                        </div>
+       
                     </div>
 
                     <!--start-->
@@ -152,8 +153,7 @@
                         <img class="img-fluid" src="../_imagens/noticias_07.jpg" alt="Imagem do filme Soldado infernal">
                         <small><a href="https://g1.globo.com/pop-arte/cinema/noticia/sebastian-stan-vem-ao-brasil-participar-da-comic-con-experience-2018.ghtml" target="_blank">Adaptação</a></small>
                         <hr class="division">
-                        <!-- botoes voltar/topo -->
-                        <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
+      
                     </div>
                     <!--end-->
 
@@ -177,6 +177,26 @@
 
     <script src="../_javascript/bootstrap.min.js"></script>
     <script src="../_javascript/jquery.js"></script>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>

@@ -12,6 +12,27 @@
     <!--css-->
     <link rel="stylesheet" type="text/css" href="../_css/principal.css" />
     <link rel="stylesheet" type="text/css" href="../_css/series.css" />
+    <script>
+        function mudaPersonagem() {
+            var x = 1;
+            
+            var myVar = setInterval(function() {
+                if (x <= 4) {
+                    $(".dc1").attr("src", "../_imagens/PerDW1-" + x + ".jpg");
+                    x++;
+                }else if (x > 4){
+                    x = x - 4;
+                }
+            }, 1500);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            mudaPersonagem();
+        }
+        
+        
+    </script>
+
     <!--responsivo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -22,6 +43,10 @@
     <!--Jquery-->
     <script src="../_javascript/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" src="../_javascript/funcoes.js"></script>
+        <!-- plugin back top -->
+    <link type="text/css" rel="stylesheet" href="../_css/dyscrollup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/css/dycodehighlighter.min.css">
+
 
 </head>
 
@@ -43,10 +68,6 @@
                 </audio>
 
                 <img id="off" style="float: left;" src="../_imagens/icon_sound.png">
-
-                <div>
-                    <button id="topo" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></button>
-                </div>
 
                 <img class="img-fluid" src="../_imagens/banner_doctorwho.jpg" alt="Doctor Who">
                 <div class="series">
@@ -87,19 +108,26 @@
 
                 <h1 class="titulo-per" style="font-family: doctor; font-size: 440%">Principais Personagens</h1>
 
+
+
                 <hr class="linha">
 
                 <!-- bloco de cada personagem-->
                 <div id="elenco" style="padding-bottom: 4%; border-style: solid; border-width: 5px; border-style: outset" class="container">
                     <div class="row">
 
-                        <div style="" class="col-12 col-md-4 col-lg-3">
-                            <img align="center" id="person" src="../_imagens/PerBB1.jpg" alt="The Doctor">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img align="center" id="person" class="dc1" src="../_imagens/PerDW1-1.jpg" alt="The Doctor">
                         </div>
 
                         <div id="person-bio" class="col-12 col-md-8 col-lg-9">
-                            <p><span>The Doctor</span> Ele é um alienígena viajante do tempo do planeta Gallifrey, terra natal dos Senhores do Tempo. Quando está serialmente machucado, pode se regenerar, alterando também sua aparência física e características psico-mentais, podendo perder algumas memorias no processo. Ele viaja na TARDIS (Time And Relative Dimension In Space), uma máquina viva que viaja instantaneamente para qualquer lugar no tempo ou espaço e ainda em dimensões podendo se materializar em qualquer local inclusive em ambientes totalmente fechados. A TARDIS pode aparentar em qualquer forma externa, mas devido a um defeito ficou com a forma de uma cabine policial azul inglesa da década de 60, como o próprio Doutor gostou da sua aparência o manteve. Geralmente parte em acompanhantes de uma ou dois pessoas, podendo viajar com mais pessoas. <a href="https://pt.wikipedia.org/wiki/Doutor_(Doctor_Who)" rel="external" target="_blank">[...]</a><br>
-                                <b>Interpretado por:</b> <a class="actor " href="https://www.google.com.br/search?ei=M5oVW-q7IoqkwgSV85GYCw&q=bryan+cranston&oq=bryan+cranston&gs_l=psy-ab.3...1092.6128.0.6366.16.13.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..16.0.0....0.c4abVt4Q7GE" target="_blank">Bryan Cranston</a><br>
+                            <p><span onclick="stop()">The Doctor</span> Ele é um alienígena viajante do tempo do planeta Gallifrey, terra natal dos Senhores do Tempo. Quando está serialmente machucado, pode se regenerar, alterando também sua aparência física e características psico-mentais, podendo perder algumas memorias no processo. Ele viaja na TARDIS (Time And Relative Dimension In Space), uma máquina viva que viaja instantaneamente para qualquer lugar no tempo ou espaço e ainda em dimensões podendo se materializar em qualquer local inclusive em ambientes totalmente fechados. A TARDIS pode aparentar em qualquer forma externa, mas devido a um defeito ficou com a forma de uma cabine policial azul inglesa da década de 60, como o próprio Doutor gostou da sua aparência o manteve. Geralmente parte em acompanhantes de uma ou dois pessoas, podendo viajar com mais pessoas. <a href="https://pt.wikipedia.org/wiki/Doutor_(Doctor_Who)" rel="external" target="_blank">[...]</a><br>
+                                <b>Interpretado por:</b>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Christopher_Eccleston" target="_blank">Christopher Eccleston,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/David_Tennant" target="_blank">David Tennant,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Matt_Smith" target="_blank">Math Smith,</a>
+                                <a class="actor " href="https://pt.wikipedia.org/wiki/Peter_Capaldi" target="_blank"><br>Peter Capaldi</a>
+                                <br>
                                 <b>Criador:</b> <a href="https://www.google.com.br/search?ei=UAYeW-TMCMPEwATmpKuADA&q=Russell+T.+Davies&oq=Russell+T.+Davies&gs_l=psy-ab.12...0.0.0.65883.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0._c99lMHXDBk" class="actor" target="_blank">Russell T. Davies</a><br>
                             </p>
                         </div>
@@ -175,7 +203,6 @@
                 </div>
                 <!-- botoes voltar/topo -->
                 <a id="back-series" href="series.html" title="PÁGINA ANTERIOR"><i class="fas fa-angle-double-left fa-2x"></i></a>
-                <a id="topo" style="float: right; cursor: pointer;" title="VOLTAR AO TOPO"><i class="fas fa-angle-double-up fa-2x"></i></a>
 
                 <!--fim div pricipal-->
                 <footer id="rodape">
@@ -196,6 +223,26 @@
 
         </div>
     </div>
+    <!-- plugin back top -->
+    <script type="text/javascript" src="../_javascript/dyscrollup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dycodehighlighter@1.0.1/dist/js/dycodehighlighter.min.js"></script>
+        <script>
+            //scroll top plugin
+    
+    $(function() {
+            dyCodeHighlighter.init();
+        });
+    
+    dyscrollup.init({
+            showafter: 600,
+            scrolldelay: 500,
+            position: 'right',
+            image: '../_imagens/48-transparent.png',
+            shape: 'other',
+            width: 30,
+            height: 30
+        });
+    </script>
 </body>
 
 </html>
